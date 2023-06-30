@@ -1,0 +1,119 @@
+body{
+	background: #000000;
+	color: #50ebec;
+	padding: 60px;
+}
+.container{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(7,auto);
+	grid-template-areas: "header header header"
+						 "content content novedades"
+						 "creadoras creadoras novedades"
+						 "copyri copyri novedades"
+						 "info Play novedades"
+						 "info Play novedades"
+						 "pie pie pie";
+	background: black;
+	color: #00ffff;																																					
+}
+.header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background: #342d7e;
+	padding: 30px;
+	border-radius:4px;
+	margin: 10px;
+	grid-area: header;
+	border: solid 5px white;
+}
+.header .Logo{
+	padding: 20px;
+}
+.Logo img{
+	width: 100px;
+	border-radius: 20px;
+}
+.header .Titulo{
+margin: 5px 5px;
+font-size: 60px;
+color: #00ffff;
+}
+.header .Frase{
+margin: 10px;
+font-size: 22px;
+color: #e0ffff;
+}
+.content{
+	background: #008080;
+	color: white;
+	padding: 20px;
+	border-radius:4px;
+	margin: 5px;
+	grid-area:content;/*"*"*/
+	border: solid 5px white;
+}
+.content ul{
+	list-style-type: none;
+      padding: 0;
+}
+.novedades{
+	background: #20b2aa;
+	color: white;
+	padding: 40px;
+	border-radius:4px;
+	
+	grid-area:novedades;/*"*"*/
+	border: solid 5px white;
+}
+.creadoras{
+	background: #66cdaa;
+	color: #142922;
+	border-radius:50%;
+	padding: 90px 30px;
+	grid-area:creadoras;
+	border: solid 5px white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+.info{
+	font-size: 20px;
+	background: #b0e0e6;
+	padding: 40px;
+	margin: 10px;
+	border-radius: 4px;
+	grid-area:info;/*"*"*/
+	border: solid 5px white;
+	color: #465a5c;
+
+}
+.Play{
+	font-size: 20px;
+    background: #afeeee;
+	color: #233030;
+	padding: 40px;
+	border-radius:4px;
+	margin: 10px;
+	grid-area:Play;/*"*"*/
+	border: solid 5px white;
+	}
+
+.pie{
+	background: #4682b4;
+	color: white;
+	padding: 40px;
+	border-radius:4px;
+	margin: 10px;
+	grid-area:pie;/*"*"*/
+	border: solid 5px white;
+}
+
+
+
+
+
